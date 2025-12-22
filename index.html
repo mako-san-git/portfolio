@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まこっさんのポートフォリオ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>まこっさん</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#work">作品</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting">こんにちは、私は</p>
+            <h1>WEBデザイナー志望のまこっさんです</h1>
+            <p class="description">ウェブデザインとフロントエンド開発を通じて、ビジネスに価値を創造します。ポートフォリオをぜひご覧ください。</p>
+            <a href="#work" class="btn">作品を見る</a>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>私のスキルと専門知識</h2>
+            <p class="section-intro">最新のウェブ標準に基づき、使いやすいデザインと実装を得意としています。</p>
+            
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <!-- <p class="icon-placeholder">🖥️</p>  -->
+                    <i class="fas fa-laptop-code fa-3x"></i>
+                    <h3>フロントエンド技術</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>簡単なPythonスクリプト</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-item">
+                    <!-- <p class="icon-placeholder">🎨</p>  -->
+                    <i class="fas fa-palette"></i>
+                    <h3>デザインとUX</h3>
+                    <ul>
+                        <li>レスポンシブデザイン</li>
+                        <li>Figma (これから学習)</li>
+                        <li>シンプルなUI/UX設計</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-item">
+                    <!-- <p class="icon-placeholder">⚙️</p>  -->
+                    <i class="fas fa-server"></i>
+                    <h3>その他ツール</h3>
+                    <ul>
+                        <li>コマンドライン操作</li>
+                        <li>Sass / Less (基礎)</li>
+                        <li>基本的なSEO対策</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2>私のポートフォリオ</h2>
+            <p class="section-intro">これまで制作した主要なプロジェクトをご覧ください。</p>
+            
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-image-placeholder">[作品 1 の画像]</div>
+                    <h3>レスポンシブな企業サイト</h3>
+                    <p>HTMLとCSSのみを使用し、全デバイスに対応したレイアウトを実装しました。</p>
+                    <a href="#" class="project-link">詳細を見る</a>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image-placeholder">[作品 2 の画像]</div>
+                    <h3>簡易ToDoアプリ</h3>
+                    <p>JavaScriptでタスクの追加、削除機能を実装しました。</p>
+                    <a href="#" class="project-link">詳細を見る</a>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image-placeholder">[作品 3 の画像]</div>
+                    <h3>Python学習用LP</h3>
+                    <p>Pythonの学習サービスを想定したクリーンなデザインのLPです。</p>
+                    <a href="#" class="project-link">詳細を見る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2></h2>
+            <p class="section-intro">お仕事の依頼やご相談など、お気軽にご連絡ください。</p>
+
+            <form action="" class="contact-form">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" placeholder="山田太郎" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea name="message" id="message" rows="5" placeholder="ご用件を入力してください" required></textarea>
+                </div>
+                <button type="submit" class="btn">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 まこっさん. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">[X]</a>
+                    <a href="#" class="social-icon">[GitHub]</a>
+                    <a href="#" class="social-icon">[LinkedIn]</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
