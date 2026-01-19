@@ -20,6 +20,26 @@ a {
     text-decoration: none;
     color: #333;
 }
+#login-demo {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#status-icon {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.valid { color: green; }
+.invalid { color: red; }
+
 
 /* --- コンテナ（幅の制限） --- */
 .container {
@@ -46,6 +66,7 @@ header {
 .logo h1 {
     font-size: 1.5rem;
     color: #007bff;
+    cursor: pointer;
 }
 
 nav ul {
@@ -236,6 +257,68 @@ nav ul li a:hover {
     border: none;
     cursor: pointer;
 }
+
+/* アカウント作成ページ全体の背景 */
+.signup-page {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 入力エリアのカード */
+.signup-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group { 
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block; margin-bottom: 5px; font-weight: bold;
+}
+.input-wrapper {
+    display: flex; align-items: center; gap: 8px; 
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ボタンが無効な時のデザイン */
+#submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.status-icon {
+    min-width: 25px; /* アイコンが動かないように幅を固定 */
+    display: inline-block;
+    text-align: center;
+}
+
+/* ✅ ❌ の色を反映させるためのクラス */
+.valid { color: green !important; }
+.invalid { color: red !important; }
 
 @media (max-width: 768px) {
     header {

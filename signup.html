@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アカウント作成 | Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="signup-page">
+    <div class="signup-container">
+        <h1>新規アカウント作成</h1>
+        <form action="" id="signup-form">
+            <div class="form-group">
+                <label for="username">ユーザー名</label>
+                <div class="input-wrapper">
+                    <input type="text" id="username" name="username" placeholder="三文字以上" required>
+                    <span id="username-status" class="status-icon"></span>
+                </div>
+                <p class="error-msg" id="username-error"></p>
+            </div>
+
+            <div class="form-group"> <label for="email">メールアドレス</label>
+    <div class="input-wrapper">
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        <span id="email-status" class="status-icon"></span> </div>
+</div>
+            <div class="form-group">
+                <label for="password">パスワード</label>
+                <div class="input-wrapper">
+                    <input type="password" id="password" name="password" placeholder="8文字以上" required>
+                    <span id="password-status" class="status-icon"></span>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-btn" disabled>アカウントを作成する</button>
+        </form>
+        <p class="footer-link"><a href="index.html">トップページに戻る</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

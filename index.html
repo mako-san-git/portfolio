@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header>
@@ -17,13 +17,14 @@
             <h1>まこっさん</h1>
         </div>
         <nav>
-            <ul>
-                <li><a href="#home">ホーム</a></li>
-                <li><a href="#work">作品</a></li>
-                <li><a href="#skills">スキル</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="/">ホーム</a></li>
+            <li><a href="#work">作品</a></li>
+            <li><a href="signup.html" class="signup-link">会員登録</a></li>
+            <li><a href="/login">ログイン</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
     </header>
 
     <section id="home" class="hero">
@@ -111,7 +112,6 @@
         <div class="container">
             <h2></h2>
             <p class="section-intro">お仕事の依頼やご相談など、お気軽にご連絡ください。</p>
-
             <form action="" class="contact-form">
                 <div class="form-group">
                     <label for="name">お名前</label>
@@ -142,5 +142,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
